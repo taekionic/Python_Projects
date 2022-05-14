@@ -11,7 +11,7 @@ Purpose:    Creating my first program with guidance from The Tech Academy Python
             means that we are returning the variable back to the calling function.
 """
 
-from operator import truediv
+
 
 
 def start(nice=0,mean=0,name=""):
