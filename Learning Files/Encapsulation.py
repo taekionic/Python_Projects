@@ -1,6 +1,3 @@
-
-
-
 class pubprivtest:
     def __init__(self):
         self._protectedVar = 'John' #defining a protectd variable, John. Protecting this variables helps ensure the data is more difficult to modify to maintain integrity of the class.
