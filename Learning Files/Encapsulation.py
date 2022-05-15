@@ -10,6 +10,8 @@ class pubprivtest:
         print(self.__privateVar)
     def setPrivate(self, newPriv): #creating a method to allow setting the private variable from outside the class.
         self.__privateVar = newPriv #by assigning our privateVar to newPriv, we can ensure that if one intends to adjust the value of __privateVar, they must specifically call the function setPrivate and use the newPriv parameter to change.
+    def procpriv(self): #defining a method to utilize both the private and protected values and demonstrate how changes will be reflected.
+        print(self.__privateVar + ' ' +self._protectedVar2)
 
 obj = pubprivtest()
 obj._protectedVar = 'Jonathan'
@@ -18,5 +20,4 @@ print(obj._protectedVar + ' ' + obj._protectedVar2)
 
 obj.getPrivate() #printing the private variable before we set it.
 obj.setPrivate('Mary') #setting the private variable by calling the setPrivate function.
-obj.getPrivate() #printing the private variable once we have redefined it to Mary.
-
+obj.procpriv()  #printing the private variable once we have redefined it to Mary.
