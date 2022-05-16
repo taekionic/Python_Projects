@@ -1,0 +1,18 @@
+1. Design GUI
+2. Add 2 selection boxes to GUI. Both allow user to browse local directory - first box is source folder, second box is destination folder.
+3. allow user to manually initiate the file check 
+
+
+update button 
+
+this feature will update the directory after checking for modded files.
+Need to define a function that will 
+	a. check to see if files have been modded (time module)
+	b. list the files that have been modded (files from step a need to be inserted into a tuple)
+	c. execute the movedir function from shutil.
+
+check button 
+this feature will check the directory for modded files, but will not commit any changes. Steps a and b from update but
+
+move sel button
+this will move the files selected in listbox to the new dir. step c from update but
