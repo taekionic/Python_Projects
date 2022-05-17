@@ -68,7 +68,7 @@ def move(self):
     for files in os.listdir(src):
         srcfiles = os.path.join(src, files)
         for i in sel:
-            dstfiles = os.path.join(dst, sel)
+            dstfiles = os.path.join(dst, self)
             shutil.move(srcfiles,dstfiles)
     
     
